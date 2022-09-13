@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+
+<BorderPane
+    xmlns="http://javafx.com/javafx" 
+    xmlns:fx="http://javafx.com/fxml" 
+    prefHeight="400" prefWidth="800"
+    fx:controller="ifpr.pgua.eic.escola.controllers.JanelaPrincipal"
+    stylesheets="@../css/estilo_principal.css"
+
+    >
+    <padding>
+
+        <Insets topRightBottomLeft="20"/>
+
+    
+    </padding>
+    
+   
+    
+    <bottom>
+
+    <HBox BorderPane.alignment="BOTTOM_LEFT">
+       
+       <ImageView fitHeight="20.0" fitWidth="30.00" pickOnBounds="true" preserveRatio="true">
+
+            <image>
+
+                <Image url="@../css/images/github.png" />
+            
+            </image>
+
+         </ImageView>
+
+        <Hyperlink onAction="#openLink" prefHeight="20.0" prefWidth="100.0" text="GeBornancin"  />
+      
+
+    </HBox>
+
+    </bottom>
+
+
+    <left >
+
+        
+    
+
+        <VBox spacing="20.0" alignment="CENTER">
+
+
+        <padding>
+
+        <Insets topRightBottomLeft="20"/>
+
+        </padding>
+
+        <HBox >
+
+            <Button text="Aluno" onAction="#carregaTelaAluno" prefWidth="150"  />
+
+            <children>
+                
+
+                <ImageView fitHeight="100.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+
+                    <image>
+
+                        <Image url="@../css/images/student.png" />
+            
+                    </image>
+
+                </ImageView>
+
+            </children>
+
+        </HBox>
+        <HBox>
+            <Button text="Curso" onAction="#carregaTelaCurso"  prefWidth="150"/>
+
+            <children>
+
+                <ImageView fitHeight="100.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+
+                    <image>
+
+                        <Image url="@../css/images/book-bookmark.png" />
+            
+                    </image>
+
+                </ImageView>
+
+            </children>
+        </HBox>
+
+        <HBox>
+            <Button text="Professor" onAction="#carregaTelaProfessor"  prefWidth="150"/>
+
+            <children>
+
+                <ImageView fitHeight="100.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+
+                    <image>
+
+                        <Image url="@../css/images/graduation-cap.png" />
+            
+                    </image>
+
+                </ImageView>
+
+            </children>
+        </HBox>
+
+        </VBox>
+
+    </left>
+
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<HBox 
+    xmlns="http://javafx.com/javafx" 
+    xmlns:fx="http://javafx.com/fxml" 
+    prefHeight="800" prefWidth="800"
+    fx:controller="ifpr.pgua.eic.escola.controllers.ListaCurso"
+    alignment="CENTER" spacing="5.0"
+    >
+    
+    <VBox spacing="5.0" >
+
+        <ListView fx:id="ltvCursos" onMouseClicked="#mostraDetalhes"/>
+
+    </VBox>
+
+    <TextArea fx:id="taDetalhes" prefWidth="200" editable="false"/>
+
+</HBox>

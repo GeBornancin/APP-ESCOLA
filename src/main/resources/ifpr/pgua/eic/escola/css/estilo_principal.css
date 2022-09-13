@@ -1,0 +1,116 @@
+.button {
+    -fx-background-color: rgb(115, 170, 23);
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: rgb(115, 170, 23);
+    -fx-text-fill: white;
+    -fx-cursor:hand;
+}
+
+
+
+.button:hover {
+
+
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(60, 94, 1, 0.623), 10, 0.7, 0.0, 0.0);
+}
+
+
+
+.cadastrarAluno:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.438), 10, 0.7, 0.0, 0.0);
+    -fx-background-color:red;
+    -fx-border-color:red;
+
+}
+
+
+.matricularAluno:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.438), 10, 0.7, 0.0, 0.0);
+    -fx-background-color:red;
+    -fx-border-color:red;
+
+}
+
+
+.cadastrarProfessor:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.438), 10, 0.7, 0.0, 0.0);
+    -fx-background-color:red;
+    -fx-border-color:red;
+}
+
+.root {
+    /* -fx-background-image: url(./images/bug.gif); */
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+    -fx-text-size: 25;
+    -fx-background-color: rgb(231, 241, 225);
+
+}
+
+
+
+.text-field {
+    -fx-background-radius: 25;
+
+}
+
+.combo-box {
+    -fx-background-radius: 25;
+    -fx-border-color: rgba(128, 128, 128, 0.568);
+    -fx-border-radius: 20;
+    -fx-background-color: white;
+}
+
+.list-view{
+
+    -fx-border-color:rgba(0, 0, 0,0);
+    -fx-background-color:rgba(0,0,0,0);
+    
+}
+
+
+.list-view .list-cell:even { 
+
+    -fx-background-color: rgba(116, 170, 23, 0.086);
+    -fx-text-fill: black; 
+    -fx-cursor:hand;
+    -fx-border-color:rgba(0, 0, 0,0);
+}
+
+ .list-view .list-cell:odd { 
+
+    -fx-background-color: rgba(116, 170, 23, 0.22); 
+    -fx-text-fill: black; 
+    -fx-cursor:hand;
+    -fx-border-color:rgba(0, 0, 0,0);
+}
+.list-view .list-cell:odd:hover{
+
+    -fx-effect: dropshadow(gaussian, rgba(116, 170, 23, 0.524), 10, 0.7, 0.0, 0.0);
+    /* -fx-border-color:rgb(0, 0, 0); */
+}
+.list-view .list-cell:even:hover{
+
+    -fx-effect: dropshadow(gaussian, rgba(116, 170, 23, 0.524), 10, 0.7, 0.0, 0.0);
+    /* -fx-border-color:rgb(0, 0, 0); */
+}
+
+.text-area .content{
+
+    -fx-background-color:  rgba(116, 170, 23, 0.524);
+    
+
+}
+.text-area{
+    -fx-border-color:rgba(0, 0, 0,0);
+    -fx-background-color:rgba(0,0,0,0);
+}
+
+.hyperlink{
+
+    -fx-text-fill:rgb(0, 0, 0);
+    -fx-content-display:text-only;
+}

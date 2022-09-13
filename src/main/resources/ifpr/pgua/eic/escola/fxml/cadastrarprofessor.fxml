@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<HBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="800" prefWidth="800"
+      fx:controller="ifpr.pgua.eic.escola.controllers.CadastrarProfessor"
+      spacing="5.0"  alignment="CENTER"
+      >
+      
+            <VBox spacing="5.0" alignment="CENTER">
+                  
+
+                  <HBox>
+                  
+                        <Label text="Cpf: " prefWidth="70"/>
+                        <TextField fx:id="tfCpf" prefWidth="400"/>
+
+                  </HBox>
+                  <HBox>                 
+                        <Label text="Nome: " prefWidth="70"/>
+                        <TextField fx:id="tfNome" prefWidth="400"/>
+                  </HBox>
+                  <HBox>
+                        <Label text="Email: " prefWidth="70"/>
+                        <TextField fx:id="tfEmail" prefWidth="400"/>
+                  </HBox>
+                  <HBox>
+                        <Label text="Telefone: " prefWidth="70"/>
+                        <TextField fx:id="tfTelefone" prefWidth="400" />
+                  </HBox>
+                  <HBox>
+                        <Label text="Salario: " prefWidth="70"/>
+                        <TextField fx:id="tfSalario" prefWidth="400"/>
+                  </HBox>
+           
+
+                  <HBox spacing="5.0"  alignment="CENTER">
+                        <Button text="Cadastrar" onAction="#cadastrar" styleClass="cadastrarProfessor"/>
+                    
+
+                  </HBox>
+
+             </VBox>
+
+      
+
+</HBox>
